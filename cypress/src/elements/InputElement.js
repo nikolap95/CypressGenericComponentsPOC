@@ -1,10 +1,8 @@
-export class InputElement {
+import { BaseElement } from "./BaseElement";
+
+export class InputElement extends BaseElement {
     constructor(selector) {
-      this.selector = selector;
-    }
-  
-    get() {
-      return cy.get(this.selector);
+      super(selector);
     }
   
     populate(value) {
