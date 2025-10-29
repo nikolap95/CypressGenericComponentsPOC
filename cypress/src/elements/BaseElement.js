@@ -7,6 +7,6 @@ export class BaseElement {
     }
 
     get() {
-    return cy.get(this.selector);
+        return cy.get(this.selector);
     }
 }
