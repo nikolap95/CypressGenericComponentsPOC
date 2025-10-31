@@ -1,3 +1,5 @@
+import { Utils } from "../../support/utils";
+
 export class BaseComponent {
 
     elements;
@@ -8,7 +10,7 @@ export class BaseComponent {
         var fields = raw[1];
 
         for(var i=0; i<headers.length; i++) {
-            this.elements[headers[i]].populate(fields[i]);
+            this.elements[headers[i]].populate(Utils.handleVarsInString(fields[i]));
         }
     }
     capture() {}

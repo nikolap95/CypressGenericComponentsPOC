@@ -9,7 +9,8 @@ export class TutorialForm extends BaseComponent {
         this.elements = {
             firstName: new InputElement("#name"),
             email: new InputElement("#email"),
-            state: new SelectElement("#state")
+            state: new SelectElement("#state"),
+            dateOfBirth: new InputElement("#dob")
         }
     }
 }
